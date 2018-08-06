@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome')->withFulltext(null);
 });
 Route::get('test', 'TestController@test');
 Route::post('test', 'TestController@test')->name('image');
